@@ -1,0 +1,20 @@
+server:
+  port: 8800
+spring:
+  application:
+    name: msconfigsvr
+  profiles:
+    active: default
+  cloud:
+    config:
+      server:
+        git:
+          #uri: http://localhost:82/msconfigsvr
+          uri: https://github.com/nowonthemove/msconfigsvr.git
+          username: kunal
+          password: kunal
+          cloneOnStart: true
+          search-paths:
+          - 'config/*/*'
+      enabled: false
+greeting: hello from application.yml base file
