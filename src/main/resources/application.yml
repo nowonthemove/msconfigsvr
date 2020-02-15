@@ -11,7 +11,7 @@ spring:
         git:
           #uri: http://localhost:82/msconfigsvr
           uri: https://github.com/nowonthemove/msconfigsvr.git
-          username: kunal
+          username: test
           password: kunal
           cloneOnStart: true
           search-paths:
